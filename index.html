@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCNI - Naukowe Centrum NeuroInnowacji | Premium Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #00a8cc 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: white; text-decoration: none; transition: all 0.3s; }
+        nav a:hover { opacity: 0.8; border-bottom: 2px solid #00d4ff; }
+        
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #00a8cc 50%, #006b99 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            margin-top: 0;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #00d4ff;
+            color: #006b99;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 2px solid #00d4ff;
+        }
+        .btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+        }
+        
+        .services {
+            padding: 4rem 2rem;
+            background: white;
+        }
+        .services h2 { text-align: center; font-size: 2.5rem; color: #0066cc; margin-bottom: 3rem; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f4ff 100%);
+            border-left: 5px solid #0066cc;
+            padding: 2rem;
+            border-radius: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 102, 204, 0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
+            border-left-color: #00a8cc;
+        }
+        .service-card h3 { color: #0066cc; margin-bottom: 0.5rem; }
+        .service-card p { color: #666; }
+        
+        .cta {
+            background: linear-gradient(135deg, #006b99 0%, #00a8cc 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta p { font-size: 1.1rem; margin-bottom: 2rem; }
+        
+        footer {
+            background: #1a2332;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+        }
+        footer a { color: #00d4ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">🧠 NCNI</div>
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#about">O Nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>NCNI - Naukowe Centrum NeuroInnowacji</h1>
+            <p>Innowacyjne terapie dla neurodywersji i zaburzeń neurologicznych</p>
+            <a href="#services" class="btn">Poznaj Nasz Ofertę</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Nasz Oferty Terapeutyczne</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🥽 VR Zero-G Massage</h3>
+                    <p>Wirtualna rzeczywistość przemą i psychomotoryczne. Unikalna terapia kombinująca VR z zerowymi odczuciami grawitacji.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💫 Biofeedback</h3>
+                    <p>Zaawansowana terapia biofeedbacku pomagająca w samoregulacji i zarzaądzeniu stresem.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🧠 ADHD</h3>
+                    <p>Specjalistyczne programy terapeutyczne dla osób z zaburzeniami nadpodatnowania.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📚 ASD Support</h3>
+                    <p>Kompleksowe wsparcie dla spektrum autyzmu z wykorzystaniem najnowszych metod.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📄 Dysleksja</h3>
+                    <p>Programy wspomagające dla osób z dysleksją i trudnościami czytania.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📝 Dyskalkulia</h3>
+                    <p>Specjalizowana terapia dla osób z trudnościami w operacjach matematycznych.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Zarezerwuj Bezpłatne Konsultacje</h2>
+            <p>Wikaň pierwszy krok w kierunku lepszego zdrowia neurologicznego</p>
+            <a href="#contact" class="btn">Skontaktuj Się</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NCNI - Naukowe Centrum NeuroInnowacji. Wszystkie prawa zastrzeżone.</p>
+            <p>Kontakt: <a href="tel:+48123456789">+48 123 456 789</a> | <a href="mailto:info@ncni.pl">info@ncni.pl</a></p>
+        </div>
+    </footer>
+</body>
+</html>
