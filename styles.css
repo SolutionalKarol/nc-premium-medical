@@ -1,0 +1,218 @@
+/* NCNI Premium Medical Design - Styles */
+
+:root {
+    --primary: #0066cc;
+    --teal: #00a8cc;
+    --cyan: #00d4ff;
+    --dark-blue: #006b99;
+    --light-bg: #f8f9ff;
+    --light-bg-2: #f0f4ff;
+    --text: #2c3e50;
+    --text-light: #666;
+    --dark-header: #1a2332;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--light-bg-2) 100%);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--teal) 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    border-bottom: 2px solid var(--cyan);
+    padding-bottom: 0.25rem;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--teal) 50%, var(--dark-blue) 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--cyan);
+    color: var(--dark-blue);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--cyan);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Services */
+.services {
+    padding: 4rem 2rem;
+    background: white;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--light-bg-2) 100%);
+    border-left: 5px solid var(--primary);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
+    border-left-color: var(--teal);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--teal) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-header);
+    color: #aaa;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
+    color: var(--cyan);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .services h2 {
+        font-size: 2rem;
+    }
+    
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+}
